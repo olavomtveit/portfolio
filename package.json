@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "first portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olavomtveit/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olavomtveit/portfolio/issues"
+  },
+  "homepage": "https://github.com/olavomtveit/portfolio#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

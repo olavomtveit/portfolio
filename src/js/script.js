@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const socialContainer = document.getElementById("socialIcon");
 const socialBtn = socialContainer.addEventListener("click", openSocial);
 const closeContainer = document.getElementById("closeIcon");
@@ -52,3 +54,34 @@ function showFramX() {
     framxTarget.style.display = "none";
   }
 }
+
+const username = "olavomtveit";
+let html = "";
+
+axios
+  .get(`https://api.github.com/users/${username}/repos?sort=created`)
+  .then((response) => {
+    const { data } = response;
+    console.log(data);
+    html += `<div class="archive-item">
+    <h3 class="text-bold">Example title - <span class="text-orange">2020</span></h3>
+    <p>Here I will fetch my github repositories through an api call. Will come soon.</p>
+    <div class="archive-item-container__visit">
+      <p class="text-orange">Visit website</p>
+      <div class="archive-item-container__visit--github">
+        <img src="./img/icons/github-frame.png" alt="Link to github repository">
+      </div>
+    </div>
+    <div class="tools-flex">
+      <div class="tool">JS</div>
+      <div class="tool">
+        <p>CSS</p>
+      </div>
+      <div class="tool">
+        <p>Bootstrap</p>
+      </div>
+    </div>
+  </div>`;
+    return githubData;
+  })
+  .catch((error) => console.log(error));
