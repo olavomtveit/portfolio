@@ -117,52 +117,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/script.js":[function(require,module,exports) {
-var socialContainer = document.getElementById("socialIcon");
-var socialBtn = socialContainer.addEventListener("click", openSocial);
-var closeContainer = document.getElementById("closeIcon");
-var closeBtn = closeContainer.addEventListener("click", closeSocial);
-var toTopContainer = document.getElementById("toTop");
+})({"js/archive.js":[function(require,module,exports) {
 
-function openSocial() {
-  socialContainer.style.display = "none";
-  closeContainer.style.display = "flex";
-  toTopContainer.style.display = "none";
-}
-
-function closeSocial() {
-  socialContainer.style.display = "flex";
-  closeContainer.style.display = "none";
-  toTopContainer.style.display = "block";
-}
-
-var spaceXTarget = document.getElementById("spaceX-details");
-var shadowballTarget = document.getElementById("shadowball-details");
-var framxTarget = document.getElementById("framX-details");
-
-function showSpaceX() {
-  if (spaceXTarget.style.display === "" || spaceXTarget.style.display === "none") {
-    spaceXTarget.style.display = "block";
-  } else {
-    spaceXTarget.style.display = "none";
-  }
-}
-
-function showShadowball() {
-  if (shadowballTarget.style.display === "" || shadowballTarget.style.display === "none") {
-    shadowballTarget.style.display = "block";
-  } else {
-    shadowballTarget.style.display = "none";
-  }
-}
-
-function showFramX() {
-  if (framxTarget.style.display === "" || framxTarget.style.display === "none") {
-    framxTarget.style.display = "block";
-  } else {
-    framxTarget.style.display = "none";
-  }
-}
 },{}],"../../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -367,5 +323,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","js/script.js"], null)
-//# sourceMappingURL=/script.d573be0b.js.map
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/hmr-runtime.js","js/archive.js"], null)
+//# sourceMappingURL=/archive.36ae607d.js.map
