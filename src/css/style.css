@@ -194,7 +194,15 @@ nav a {
 }
 
 .archive-item {
+  border-left: 2px solid #283756;
+  border-bottom: 2px solid #283756;
   margin-bottom: 64px;
+}
+
+.archive-item h3,
+.archive-item p,
+.archive-item a {
+  margin-left: 16px;
 }
 
 .text-line {
@@ -322,6 +330,10 @@ nav a {
 .visit-container--github img {
   width: 24px;
   height: 24px;
+}
+
+.viewCode {
+  text-decoration: none;
 }
 
 /*/// Bootstrap Navbar ///*/

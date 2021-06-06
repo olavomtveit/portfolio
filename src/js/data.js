@@ -10,33 +10,22 @@ axios
     const { data } = response;
     console.log(data);
     html += ``;
+
+    let desc = "";
     for (let i = 0; i < data.length; i++) {
+      if (data[i].description === null) {
+        desc = "No description used";
+      } else {
+        desc = data[i].description;
+      }
+
       html += `<div class="archive-item">
-                <h3 class="text-bold">${data[i].full_name} - <span class="text-orange">${data[i].created_at}</span></h3>
-                <p>${data[i].description}</p>
+                <h3 class="text-bold">${data[i].name}</h3>
+                <p>${desc}</p>
+                <a href=${data[i].html_url} class="viewCode" target="_blank"><p class="text-orange">View code</p></a>
               </div>`;
     }
     container.innerHTML = html;
     return data;
   })
   .catch((error) => console.log(error));
-
-/* <div class="archive-item">
-    <h3 class="text-bold">Example title - <span class="text-orange">2020</span></h3>
-    <p>Here I will fetch my github repositories through an api call. Will come soon.</p>
-    <div class="archive-item-container__visit">
-      <p class="text-orange">Visit website</p>
-      <div class="archive-item-container__visit--github">
-        <img src="./img/icons/github-frame.png" alt="Link to github repository">
-      </div>
-    </div>
-    <div class="tools-flex">
-      <div class="tool">JS</div>
-      <div class="tool">
-        <p>CSS</p>
-      </div>
-      <div class="tool">
-        <p>Bootstrap</p>
-      </div>
-    </div>
-  </div> */
