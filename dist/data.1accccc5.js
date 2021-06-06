@@ -1934,9 +1934,10 @@ _axios.default.get("https://api.github.com/users/".concat(username, "/repos?sort
   html += "";
 
   for (var i = 0; i < data.length; i++) {
-    html += "<div class=\"archive-item\">\n                <h3 class=\"text-bold\">".concat(data[i].name, " - <span class=\"text-orange\">INSERT YEAR\n              </div>");
+    html += "<div class=\"archive-item\">\n                <h3 class=\"text-bold\">".concat(data[i].full_name, " - <span class=\"text-orange\">").concat(data[i].created_at, "</span></h3>\n                <p>").concat(data[i].description, "</p>\n              </div>");
   }
 
+  container.innerHTML = html;
   return data;
 }).catch(function (error) {
   return console.log(error);
@@ -1988,7 +1989,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62923" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49850" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -12,9 +12,11 @@ axios
     html += ``;
     for (let i = 0; i < data.length; i++) {
       html += `<div class="archive-item">
-                <h3 class="text-bold">${data[i].name} - <span class="text-orange">INSERT YEAR
+                <h3 class="text-bold">${data[i].full_name} - <span class="text-orange">${data[i].created_at}</span></h3>
+                <p>${data[i].description}</p>
               </div>`;
     }
+    container.innerHTML = html;
     return data;
   })
   .catch((error) => console.log(error));
