@@ -1,4 +1,4 @@
-import axios from "../../node_modules/axios/dist/axios.min.js";
+import axios from "../../node_modules/axios/dist/";
 
 const username = "olavomtveit";
 let html = "";
