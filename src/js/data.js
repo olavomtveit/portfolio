@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 const username = "olavomtveit";
 let html = "";
@@ -8,7 +8,6 @@ axios
   .get(`https://api.github.com/users/${username}/repos?sort=created`)
   .then((response) => {
     const { data } = response;
-    console.log(data);
     html += ``;
 
     let desc = "";
