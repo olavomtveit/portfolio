@@ -1,4 +1,4 @@
-import axios from "../../node_modules/axios";
+const axios = require("axios");
 
 const username = "olavomtveit";
 let html = "";
