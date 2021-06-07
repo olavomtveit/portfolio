@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/olavomtveit/portfolio#readme",
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.21.1",
+    "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
