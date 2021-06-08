@@ -20,7 +20,7 @@ const spaceXTarget = document.getElementById("spaceX-details");
 const shadowballTarget = document.getElementById("shadowball-details");
 const framxTarget = document.getElementById("framX-details");
 
-function showSpaceX() {
+window.showSpaceX = function () {
   if (
     spaceXTarget.style.display === "" ||
     spaceXTarget.style.display === "none"
@@ -29,9 +29,9 @@ function showSpaceX() {
   } else {
     spaceXTarget.style.display = "none";
   }
-}
+};
 
-function showShadowball() {
+window.showShadowball = function () {
   if (
     shadowballTarget.style.display === "" ||
     shadowballTarget.style.display === "none"
@@ -40,9 +40,9 @@ function showShadowball() {
   } else {
     shadowballTarget.style.display = "none";
   }
-}
+};
 
-function showFramX() {
+window.showFramX = function () {
   if (
     framxTarget.style.display === "" ||
     framxTarget.style.display === "none"
@@ -51,4 +51,4 @@ function showFramX() {
   } else {
     framxTarget.style.display = "none";
   }
-}
+};

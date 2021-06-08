@@ -140,29 +140,29 @@ var spaceXTarget = document.getElementById("spaceX-details");
 var shadowballTarget = document.getElementById("shadowball-details");
 var framxTarget = document.getElementById("framX-details");
 
-function showSpaceX() {
+window.showSpaceX = function () {
   if (spaceXTarget.style.display === "" || spaceXTarget.style.display === "none") {
     spaceXTarget.style.display = "block";
   } else {
     spaceXTarget.style.display = "none";
   }
-}
+};
 
-function showShadowball() {
+window.showShadowball = function () {
   if (shadowballTarget.style.display === "" || shadowballTarget.style.display === "none") {
     shadowballTarget.style.display = "block";
   } else {
     shadowballTarget.style.display = "none";
   }
-}
+};
 
-function showFramX() {
+window.showFramX = function () {
   if (framxTarget.style.display === "" || framxTarget.style.display === "none") {
     framxTarget.style.display = "block";
   } else {
     framxTarget.style.display = "none";
   }
-}
+};
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -191,7 +191,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63130" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64689" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
